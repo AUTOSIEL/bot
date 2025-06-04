@@ -1,0 +1,47 @@
+/* Скрываем колонки с датой */
+.time-picker-hidden-date .adm-picker-view-column:nth-child(1),
+.time-picker-hidden-date .adm-picker-view-column:nth-child(2),
+.time-picker-hidden-date .adm-picker-view-column:nth-child(3) {
+  display: none !important;
+}
+.time-picker-hidden-date .adm-picker-view-column:nth-child(5) .adm-picker-view-column-item{
+  margin: auto auto auto 0;
+}
+.time-picker-hidden-date .adm-picker-view-column:nth-child(4) .adm-picker-view-column-item{
+  margin: auto 0 auto auto;
+}
+.time-picker-hidden-date .adm-picker-view-column{
+  
+}
+
+/* Стили для триггера */
+.time-picker-trigger {
+  padding: 8px 12px;
+  border: 1px solid #d9d9d9;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: white
+}
+
+/* Убираем отступы у скрытых колонок */
+.time-picker-hidden-date .adm-picker-view {
+  --item-height: 40px;
+  --active-item-height: 40px;
+  justify-content: center;
+  background: #f2f2f2;
+}
+
+.custom-datepicker-order .adm-picker-view-column:nth-child(1) { order: 3; }
+.custom-datepicker-order .adm-picker-view-column:nth-child(2) { order: 2; }
+.custom-datepicker-order .adm-picker-view-column:nth-child(3) { order: 1; }
+.custom-datepicker-order .adm-picker-view {
+  display: flex;
+  flex-direction: row;
+}
+
+.time-picker-hidden-date .adm-picker-view-column-item{
+  font-size: 24px!important;
+  font-weight: 400!important;
+  max-width: 70px;
+  background: #f2f2f2;
+}

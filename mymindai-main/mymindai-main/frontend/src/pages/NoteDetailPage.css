@@ -1,0 +1,139 @@
+.note-detail-container {
+    background: linear-gradient(360deg, #ffffff, #ffffff6b);
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.note-header {
+  margin-bottom: 16px;
+}
+
+.note-title {
+  font-size: 20px;
+  margin: 0;
+  cursor: pointer;
+}
+
+.note-title:hover {
+  background-color: #f0f0f0;
+}
+
+.note-title-input {
+  width: 100%;
+  padding: 8px;
+  font-size: 20px;
+  border: 0;
+  background: unset;
+  outline: none;
+  border-bottom: 1px solid #ddd;
+}
+
+.note-meta {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+.remove-note{
+  font-weight: 500;
+  text-decoration: underline;
+}
+.note-content-container {
+  position: relative;
+  min-height: 200px;
+}
+
+.note-content {
+  padding: 12px;
+  border-radius: 4px;
+  min-height: 200px;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+
+.note-content:hover {
+  border: 1px dashed #ddd;
+}
+
+.note-content-editable {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-top: 0;
+  border-radius: 0px 0px 4px 4px;
+  min-height: 200px;
+  outline: none;
+}
+
+.note-content-editable:empty:before {
+  content: attr(placeholder);
+  color: #999;
+  display: block;
+}
+
+.note-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.save-btn, .cancel-btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.formatting-toolbar {
+  border: 1px solid #ddd;
+  border-bottom: 0;
+  border-radius: 4px 4px 0px 0px;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.formatting-toolbar.visible {
+  display: flex;
+  gap: 4px;
+}
+
+.note-detail-container img, .note-detail-container video{
+  width: 100%;
+  border-radius: 15px;
+}
+
+.formatting-toolbar button {
+  padding: 8px;
+  border: none;
+  background: #f0f0f0;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.formatting-toolbar button:hover {
+  background: #ddd;
+}
+
+.toggle-toolbar-btn {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  background: #f0f0f0;
+  border: none;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.note-not-found {
+  padding: 20px;
+  text-align: center;
+  color: #666;
+}
