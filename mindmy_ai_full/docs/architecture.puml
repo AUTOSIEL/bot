@@ -1,0 +1,21 @@
+@startuml
+actor User
+package "Interfaces" {
+  [Telegram Bot] --> (MindMy Core)
+  [HTTP API] --> (MindMy Core)
+}
+package "MindMy Core" {
+  (ContextEngine)
+  (DNAEngine)
+  (IntentPlanner)
+  (SecurityGuard)
+}
+package "Memory" {
+  database "Supabase" as DB
+  queue "Redis" as Cache
+}
+User --> [Telegram Bot]
+User --> [HTTP API]
+(MindMy Core) --> DB
+(MindMy Core) --> Cache
+@enduml

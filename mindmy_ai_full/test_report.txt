@@ -1,0 +1,22 @@
+==================================== ERRORS ====================================
+[31m[1m_________________________ ERROR collecting test_api.py _________________________[0m
+[31mImportError while importing test module '/mnt/data/mindmy_ai_full/tests/test_api.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+[1m[31m/usr/local/lib/python3.11/importlib/__init__.py[0m:126: in import_module
+    [94mreturn[39;49;00m _bootstrap._gcd_import(name[level:], package, level)[90m[39;49;00m
+[1m[31m/mnt/data/mindmy_ai_full/tests/test_api.py[0m:2: in <module>
+    [94mfrom[39;49;00m[90m [39;49;00m[04m[96mmindmy_api[39;49;00m[04m[96m.[39;49;00m[04m[96mmain[39;49;00m[90m [39;49;00m[94mimport[39;49;00m app[90m[39;49;00m
+[1m[31m/mnt/data/mindmy_ai_full/mindmy_api/main.py[0m:3: in <module>
+    [94mfrom[39;49;00m[90m [39;49;00m[04m[96mfastapi[39;49;00m[90m [39;49;00m[94mimport[39;49;00m FastAPI, Depends, HTTPException, status[90m[39;49;00m
+[1m[31mE   ImportError: cannot import name 'FastAPI' from 'fastapi' (unknown location)[0m[0m
+[33m=============================== warnings summary ===============================[0m
+../../mnt/data/mindmy_ai_full/tests/test_context_engine.py:9
+  /mnt/data/mindmy_ai_full/tests/test_context_engine.py:9: PytestUnknownMarkWarning: Unknown pytest.mark.asyncio - is this a typo?  You can register custom marks to avoid this warning - for details, see https://docs.pytest.org/en/stable/mark.html
+    @pytest.mark.asyncio
+
+-- Docs: https://docs.pytest.org/en/stable/warnings.html
+=========================== short test summary info ============================
+ERROR ../../mnt/data/mindmy_ai_full/tests/test_api.py
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+[31m[33m1 warning[0m, [31m[1m1 error[0m[31m in 0.39s[0m[0m
